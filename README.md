@@ -1,6 +1,6 @@
-# Frontend Mentor - Planets fact site solution
+# Frontend Mentor - Shortly URL shortening API Challenge solution
 
-This is a solution to the [Planets fact site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
 
 ## Table of contents
 
@@ -8,9 +8,11 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [Built with](#built-with)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -18,33 +20,46 @@ This is a solution to the [Planets fact site challenge on Frontend Mentor](https
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology"
+- View the optimal layout for the site depending on their device's screen size
+- Shorten any valid URL
+- See a list of their shortened links, even after refreshing the browser
+- Copy the shortened link to their clipboard in a single click
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty
 
 ### Screenshot
 
-![](./public/readme_screenshots/desktop.png)
-![](./public/readme_screenshots/tablet.png)
-![](./public/readme_screenshots/mobile.png)
+![](./readme-screenshots/desktop-1.png)
+![](./readme-screenshots/desktop-2.png)
+![](./readme-screenshots/mobile-1.png)
+![](./readme-screenshots/mobile-2.png)
 
 ### Links
 
-- Solution URL: https://nimble-cocada-1b92bf.netlify.app/
-- Live Site URL: https://github.com/SlawekZet/FEM-Shortly-repository
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - [React](https://reactjs.org/) - JS library
+- [Express.js](https://expressjs.com/) - node.js framework
+- [Netlify](https://www.netlify.com/) - to deploy page and server
+- [CleanUri](https://cleanuri.com/) - API to shorten the URLs
+
+### What I learned
+
+I needed to learn the basics of Express.JS to be able to set up a server and cover the CORS policy issue I had when I tried to connect to the Clean URI API
+
+### Useful resources
+
+- [Node.JS Tutorial](https://youtu.be/fBNz5xF-Kx4) - Really nice tutorial, that helped me understand basics of node.js
+- [Express.JS Tutorial](https://youtu.be/L72fhGm1tfE) - The same but for express.js
 
 ## Author
 
 - Frontend Mentor - [@SlawekZet](https://www.frontendmentor.io/profile/SlawekZet)
-
-## Acknowledgments
-
-I want to thanks my mentor, Kuba Szachewicz, for code review and some helpfull tips.
