@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://nimble-cocada-1b92bf.netlify.app/
+- Live Site URL: https://github.com/SlawekZet/FEM-Shortly-repository
 
 ### Built with
 
