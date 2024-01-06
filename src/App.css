@@ -755,7 +755,7 @@ input::placeholder {
     padding: 5em 0;
     background: url(../public/bg-boost-mobile.svg);
     background-color: var(--very-dark-blue);
-    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-items: center;
   }

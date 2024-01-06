@@ -9,6 +9,7 @@ export const Navbar = () => {
     const handleResize = () => {
       setIsMenuVisible(window.innerWidth >= 427);
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);

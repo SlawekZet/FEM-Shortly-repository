@@ -104,7 +104,7 @@ export const Shortener = () => {
     <>
       <section className="shortener-wrapper horizontal-padding">
         <div className="shortener">
-          <form action="" className="shortener-form ">
+          <form className="shortener-form ">
             <input
               name="shortener-input"
               type="text"
