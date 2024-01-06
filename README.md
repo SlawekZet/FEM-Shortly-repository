@@ -36,9 +36,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/SlawekZet/FEM-Shortly-repository
-- Live Site URL: https://nimble-cocada-1b92bf.netlify.app/
-- Express.JS CORS proxy: https://github.com/SlawekZet/express-CORS-proxy
+- Solution URL: [https://github.com/SlawekZet/FEM-Shortly-repository](https://github.com/SlawekZet/FEM-Shortly-repository)
+- Live Site URL: [https://nimble-cocada-1b92bf.netlify.app/](https://nimble-cocada-1b92bf.netlify.app/)
+- Express.JS CORS proxy: [https://github.com/SlawekZet/express-CORS-proxy](https://github.com/SlawekZet/express-CORS-proxy)
 
 ## My process
 
