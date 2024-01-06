@@ -6,7 +6,6 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -26,13 +25,6 @@ Users should be able to:
 - Copy the shortened link to their clipboard in a single click
 - Receive an error message when the `form` is submitted if:
   - The `input` field is empty
-
-### Screenshot
-
-![](./readme-screenshots/desktop-1.png)
-![](./readme-screenshots/desktop-2.png)
-![](./readme-screenshots/mobile-1.png)
-![](./readme-screenshots/mobile-2.png)
 
 ### Links
 
