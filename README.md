@@ -1,30 +1,66 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Shortly URL shortening API Challenge solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+Users should be able to:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- View the optimal layout for the site depending on their device's screen size
+- Shorten any valid URL
+- See a list of their shortened links, even after refreshing the browser
+- Copy the shortened link to their clipboard in a single click
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Screenshot
+
+![](./readme-screenshots/desktop-1.png)
+![](./readme-screenshots/desktop-2.png)
+![](./readme-screenshots/mobile-1.png)
+![](./readme-screenshots/mobile-2.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- [React](https://reactjs.org/) - JS library
+- [Express.js](https://expressjs.com/) - node.js framework
+- [Netlify](https://www.netlify.com/) - to deploy page and server
+- [CleanUri](https://cleanuri.com/) - API to shorten the URLs
+
+### What I learned
+
+I needed to learn the basics of Express.JS to be able to set up a server and cover the CORS policy issue I had when I tried to connect to the Clean URI API
+
+### Useful resources
+
+- [Node.JS Tutorial](https://youtu.be/fBNz5xF-Kx4) - Really nice tutorial, that helped me understand basics of node.js
+- [Express.JS Tutorial](https://youtu.be/L72fhGm1tfE) - The same but for express.js
+
+## Author
+
+- Frontend Mentor - [@SlawekZet](https://www.frontendmentor.io/profile/SlawekZet)
