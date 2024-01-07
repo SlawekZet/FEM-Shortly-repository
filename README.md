@@ -47,7 +47,7 @@ Users should be able to:
 - [CleanUri](https://cleanuri.com/) - API to shorten the URLs
 
 Prepared for widths:
-- > 1440px
+- 1440px+
 - 1440px
 - 1024px
 - 768px (tablet)
