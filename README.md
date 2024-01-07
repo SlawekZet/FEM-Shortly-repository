@@ -40,10 +40,18 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Typescript
+- CSS Modules
 - [React](https://reactjs.org/) - JS library
 - [Express.js](https://expressjs.com/) - node.js framework
 - [Netlify](https://www.netlify.com/) - to deploy page and server
 - [CleanUri](https://cleanuri.com/) - API to shorten the URLs
+
+Prepared for widths:
+- > 1440px
+- 1440px
+- 1024px
+- 768px (tablet)
+- 425-320px (mobile)
 
 ### What I learned
 
