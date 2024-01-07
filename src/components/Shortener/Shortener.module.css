@@ -5,7 +5,7 @@
 
 .shortener {
   width: 100%;
-  background: url("../public/bg-shorten-desktop.svg") no-repeat;
+  background: url("../../assets/bacgrounds/bg-shorten-desktop.svg");
   background-color: var(--very-dark-blue);
   background-size: cover;
   border-radius: 10px;
@@ -81,7 +81,7 @@
   }
 
   .shortener {
-    background: url("../public/bg-shorten-mobile.svg") no-repeat;
+    background: url("../../assets/bacgrounds/bg-shorten-mobile.svg");
     background-color: var(--very-dark-blue);
     background-size: cover;
     padding: 1.33em;

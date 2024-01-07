@@ -114,7 +114,7 @@
 
 .ctaWrapper {
   padding: 3em 0;
-  background: url(../public/bg-boost-desktop.svg);
+  background: url("../../assets/bacgrounds/bg-boost-desktop.svg");
   background-color: var(--very-dark-blue);
   background-repeat: no-repeat;
   display: flex;
@@ -336,7 +336,7 @@
 
   .ctaWrapper {
     padding: 5em 0;
-    background: url(../public/bg-boost-mobile.svg);
+    background: url("../../assets/bacgrounds/bg-boost-mobile.svg");
     background-color: var(--very-dark-blue);
     background-size: cover;
     justify-content: center;
