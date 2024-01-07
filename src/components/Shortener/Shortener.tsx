@@ -1,3 +1,4 @@
+import styles from "./Shortener.module.css";
 import { useEffect } from "react";
 import { Button } from "../Button/Button";
 import { useUrlShortenerContext } from "../../context/UrlShortenerContext";
@@ -102,34 +103,32 @@ export const Shortener = () => {
 
   return (
     <>
-      <section className="shortener-wrapper horizontal-padding">
-        <div className="shortener">
-          <form className="shortener-form ">
+      <section className={`${styles.wrapper} horizontal-padding`}>
+        <div className={styles.shortener}>
+          <form className={styles.form}>
             <input
               name="shortener-input"
               type="text"
               placeholder="Shorten a link here..."
               className={
-                error
-                  ? "shortener-input shortener-border-red"
-                  : "shortener-input"
+                error ? `${styles.input} ${styles.borderRed}` : styles.input
               }
               value={originalUrl}
               onChange={(e) => setOriginalUrl(e.target.value)}
             />
             {!error && error.length === 0 ? null : (
-              <div className="shortener-error-loading-wrapper">
-                <p className="shortener-error-message">{error}</p>
+              <div className={styles.errorLoadingWrapper}>
+                <p className={styles.errorMessage}>{error}</p>
               </div>
             )}
             {!loading ? null : (
-              <div className="shortener-error-loading-wrapper">
-                <p className="shortener-loading-message">Shortening...</p>
+              <div className={styles.errorLoadingWrapper}>
+                <p className={styles.loadingMessage}>Shortening...</p>
               </div>
             )}
             <Button
               onClick={handleShortenUrl}
-              className="button-primary shortener-button"
+              className={`button-primary ${styles.button}`}
             >
               Shorten It!
             </Button>

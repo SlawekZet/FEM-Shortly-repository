@@ -5,5 +5,5 @@ interface FooterElementProps {
 }
 
 export const FooterElement: React.FC<FooterElementProps> = ({ children }) => {
-  return <div className="footer-menu-element"> {children} </div>;
+  return <div> {children} </div>;
 };
