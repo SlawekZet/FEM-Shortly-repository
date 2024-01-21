@@ -21,6 +21,8 @@ export const Shortener = () => {
   // the API. Then it renders them on the view.
 
   const errorChecker = () => {
+    const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/;
+
     if (!originalUrl && originalUrl.length === 0) {
       setError("Please provide a URL to shorten");
       return true;
@@ -34,6 +36,15 @@ export const Shortener = () => {
       !originalUrl.includes("https://")
     ) {
       setError("Please add a protocol http:// or https:// to your URL");
+      return true;
+    } else if (!urlRegex.test(originalUrl)) {
+      setError("Please provide a correct URL");
+      return true;
+    } else if (urlsArray.some((e) => e.orgUrl === originalUrl)) {
+      setError("This url is already shortened and on your list");
+      return true;
+    } else if (originalUrl.includes("shooort.eu")) {
+      setError("You cannot shorten already shortened URL");
       return true;
     }
     setError("");
@@ -52,13 +63,13 @@ export const Shortener = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://spectacular-babka-fa1a16.netlify.app/shorten-url",
+          "https://render-shooort.onrender.com/shorten",
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ url: originalUrl }),
+            body: JSON.stringify({ originalUrl: originalUrl }),
           }
         );
 
@@ -66,7 +77,7 @@ export const Shortener = () => {
           throw new Error("Failed to shorten URL");
         }
         const result = await response.json();
-        setShortenedUrl(result.shortUrl);
+        setShortenedUrl(result.shortenedUrl);
         setLoading(false);
       } catch (error) {
         setError(`An error has occured while shortening URL`);
@@ -100,6 +111,11 @@ export const Shortener = () => {
       localStorage.setItem("urlsArray", JSON.stringify(urlsArray));
     }
   }, [urlsArray]);
+
+  useEffect(() => {
+    setError("");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [originalUrl]);
 
   return (
     <>

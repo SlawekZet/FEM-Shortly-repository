@@ -2,6 +2,7 @@ import styles from "./Navbar.module.css";
 import { useState, useEffect } from "react";
 import { handlePlaceholderClick } from "../../utils/utils";
 import { Button } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
@@ -10,7 +11,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMenuVisible(window.innerWidth >= 427);
+      setIsMenuVisible(window.innerWidth >= 427); // check if it chanes every time the state
     };
     handleResize();
     window.addEventListener("resize", handleResize);
@@ -26,7 +27,13 @@ export const Navbar = () => {
   return (
     <div className={`${styles.wrapper} horizontal-padding`}>
       <div className={styles.logoButtonWrapper}>
-        <img src="./logo.svg" alt="shortly logotype" className={styles.logo} />
+        <Link to="/" className={styles.logoLink}>
+          <img
+            src="./logo.svg"
+            alt="shortly logotype"
+            className={styles.logo}
+          />
+        </Link>
         <Button
           onClick={() => handleMenuClick()}
           className={styles.menuIconButton}
