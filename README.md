@@ -47,7 +47,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/SlawekZet/FEM-Shortly-repository](https://github.com/SlawekZet/FEM-Shortly-repository)
-- Live Site URL: [https://nimble-cocada-1b92bf.netlify.app/](https://nimble-cocada-1b92bf.netlify.app/)
+- Live Site URL: [https://shooort.eu/](https://shooort.eu/)
 - Express.JS server: [https://github.com/SlawekZet/Render-express.js-server](https://github.com/SlawekZet/Render-express.js-server)
 
 ## My process
